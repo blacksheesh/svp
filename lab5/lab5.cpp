@@ -178,7 +178,7 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
-    ifstream file("route.txt");//(argv[1]);
+    ifstream file(argv[1]);//(argv[1]);
 
     Route route;
     int x, y;

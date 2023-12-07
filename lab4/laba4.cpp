@@ -40,7 +40,6 @@ public:
         {
             run += kilometers;
             fuel -= fuelNeeded;
-            ostfuelroad -= kilometers;
             return true;
         }
         else

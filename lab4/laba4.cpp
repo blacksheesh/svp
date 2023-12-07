@@ -11,7 +11,7 @@ public:
     virtual bool drive(int kilometers) = 0; // Виртуальная функция для передвижения на заданное расстояние
     virtual void refuel() = 0;  // Виртуальная функция для заправки транспортного средства
     virtual void printstatus() = 0; // Виртуальная функция для вывода статуса транспортного средства
-    virtual ~IVehicle() = default;  // Виртуальный деструктор для интерфейса
+   
 };
 
 class AbstractCar : public IVehicle // Абстрактный класс для автомобилей, реализующий интерфейс IVehicle
@@ -19,21 +19,17 @@ class AbstractCar : public IVehicle // Абстрактный класс для 
 protected:
     double fuel;        // Текущий уровень топлива
     const double rashod; // Расход топлива
-    double ostfuelroad; // Оставшееся топливо для текущего пути
     int run;            // Общее пройденное расстояние
     const double bak;   // Максимальная вместимость бака
-    double fuelroad;    // Максимальное расстояние, которое можно проехать с полным баком
 
 public:
-    AbstractCar(double fuelbak, const double maxfuelroad, const double rashod) : run(0), fuel(fuelbak), bak(fuelbak), fuelroad(maxfuelroad), rashod(rashod) {}     // Параметризованный конструктор
+    AbstractCar(double fuelbak, const double rashod) : run(0), fuel(fuelbak), bak(fuelbak), rashod(rashod) {}     // Параметризованный конструктор
 
     AbstractCar() : fuel(0), rashod(0), ostfuelroad(0), run(0), bak(0), fuelroad(0) {} // Добавляем конструктор по умолчанию
 
     void refuel() // Функция для заправки автомобиля
     {
-        double refuel = bak - fuel;
-        fuel += refuel;
-        ostfuelroad = fuelroad;
+        fuel = bak
         cout << "Заправка прошла успешно. В баке " << fuel << " литров топлива." << endl;
     }
 
@@ -166,7 +162,7 @@ public:
         
     }
 
-    ~Route() = default;
+
 };
 
 int main()

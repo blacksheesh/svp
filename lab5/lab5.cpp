@@ -21,32 +21,28 @@ class AbstractCar : public IVehicle // Абстрактный класс для 
 protected:
     double fuel;        // Текущий уровень топлива
     const double rashod; // Расход топлива
-    double ostfuelroad; // Оставшееся топливо для текущего пути
     int run;            // Общее пройденное расстояние
     const double bak;   // Максимальная вместимость бака
-    double fuelroad;    // Максимальное расстояние, которое можно проехать с полным баком
 
 public:
-    AbstractCar(double fuelbak, const double maxfuelroad, const double rashod) : run(0), fuel(fuelbak), bak(fuelbak), fuelroad(maxfuelroad), rashod(rashod) {}     // Параметризованный конструктор
+    AbstractCar(double fuelbak, const double rashod) : run(0), fuel(fuelbak), bak(fuelbak), rashod(rashod) {}     // Параметризованный конструктор
 
-    AbstractCar() : fuel(0), rashod(0), ostfuelroad(0), run(0), bak(0), fuelroad(0) {} // Добавляем конструктор по умолчанию
+    AbstractCar() : fuel(0), rashod(0), run(0), bak(0) {} // Добавляем конструктор по умолчанию
 
     void refuel() // Функция для заправки автомобиля
     {
         double refuel = bak - fuel;
         fuel += refuel;
-        ostfuelroad = fuelroad;
         cout << "Refueling was successful. In the tank " << fuel << " liters of fuel." << endl;
     }
 
     bool drive(int kilometers)  // Функция для передвижения на заданное расстояние
     {
         double fuelNeeded = static_cast<double>(kilometers) / rashod;
-        if (ostfuelroad >= kilometers && fuel >= fuelNeeded)
+        if (fuel >= fuelNeeded)
         {
             run += kilometers;
             fuel -= fuelNeeded;
-            ostfuelroad -= kilometers;
             return true;
         }
         else
@@ -65,7 +61,7 @@ public:
 class Suv : public AbstractCar // Класс для внедорожников, наследующийся от AbstractCar
 {
 public:
-    Suv() : AbstractCar(70, 420, 25) {}
+    Suv() : AbstractCar(60, 25) {}
 
 
 };
@@ -73,7 +69,7 @@ public:
 class Sedan : public AbstractCar // Класс для седанов, наследующийся от AbstractCar
 {
 public:
-    Sedan() : AbstractCar(43, 614, 7) {} // Легковая машина, бак на 43 литров, расход 7.0 л/100 км
+    Sedan() : AbstractCar(43, 7) {} // Легковая машина, бак на 43 литров, расход 7.0 л/100 км
 
 
 };
@@ -81,7 +77,7 @@ public:
 class Bus : public AbstractCar // Класс для автобусов, наследующийся от AbstractCar
 {
 public:
-    Bus() : AbstractCar(120, 700, 20) {}
+    Bus() : AbstractCar(100, 20) {}
 
 
 };
@@ -141,10 +137,12 @@ public:
     void run(IVehicle* vehicle) // Функция для прохождения маршрута транспортным средством
     {
         if (points.size() >= 2) {
-            for (auto& point : points)
+            for (int i = 0; i < points.size() - 1; i++)
             {
-                cout << "The end of the route at the point: (" << point.Xkm << "," << point.Ykm << ") " << point.name << endl;
-                int road = sqrt(pow(point.Xkm, 2) + pow(point.Ykm, 2));
+                int xDiff = points[i + 1].Xkm - points[i].Xkm;
+                int yDiff = points[i + 1].Ykm - points[i].Ykm;
+                int road = sqrt(xDiff * xDiff + yDiff * yDiff);
+                cout << "Has drven: " << road << endl;
                 if (!vehicle->drive(road))
                 {
                     cout << "Not enough fuel. Need refueling." << endl;
@@ -195,10 +193,10 @@ int main(int argc, char* argv[]) {
     IVehicle* vehicles[4] = { new Sedan(), new Suv(), new Bus(), new Bicycle() };
     for (int i = 0; i < 4; ++i) {
         IVehicle* vehicle = vehicles[i];
-        route.run(new Sedan());
+        route.run(vehicle);
         delete vehicle;
         cout << endl;
     }
 
-       return 0;
+    return 0;
 }

@@ -139,8 +139,7 @@ public:
                 int xDiff = points[i + 1].Xkm - points[i].Xkm;
                 int yDiff = points[i + 1].Ykm - points[i].Ykm;
                 int road = sqrt(xDiff * xDiff + yDiff * yDiff);
-
-
+                cout << "Проехали: " << road << endl;
                 if (!vehicle->drive(road))
                 {
                     cout << "Не хватает топлива. Нужна дозаправка." << endl;
@@ -159,7 +158,7 @@ public:
 
         }
         else {
-            cerr << "ОШИБКА! Введите верное количество точек!" << endl;
+            cout << "ОШИБКА! Введите верное количество точек!" << endl;
         }
 
     }

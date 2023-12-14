@@ -1,0 +1,140 @@
+<mxfile host="app.diagrams.net" modified="2023-12-14T11:43:25.656Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 OPR/104.0.0.0 (Edition Yx GX 03)" etag="hrzlDXFCS9FUE22CjhT7" version="22.1.8" type="device">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="2218" dy="1343" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="La5q6GyVd392wMZVeIZk-40" value="Начало" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="240" y="30" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="La5q6GyVd392wMZVeIZk-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="La5q6GyVd392wMZVeIZk-40" target="La5q6GyVd392wMZVeIZk-42" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="La5q6GyVd392wMZVeIZk-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="La5q6GyVd392wMZVeIZk-42" target="La5q6GyVd392wMZVeIZk-45" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="La5q6GyVd392wMZVeIZk-42" value="Ввод дистанции" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="227.5" y="90" width="145" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="La5q6GyVd392wMZVeIZk-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="La5q6GyVd392wMZVeIZk-45" target="La5q6GyVd392wMZVeIZk-47" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="La5q6GyVd392wMZVeIZk-45" value="Расчет топлива для прохождения дистанции" style="rounded=1;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="240" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="La5q6GyVd392wMZVeIZk-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="La5q6GyVd392wMZVeIZk-47" target="La5q6GyVd392wMZVeIZk-48" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="La5q6GyVd392wMZVeIZk-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="La5q6GyVd392wMZVeIZk-47" target="La5q6GyVd392wMZVeIZk-53" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="123" y="255" />
+              <mxPoint x="123" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4djFcbj9iYKiQpnmJofF-0" value="Да" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="La5q6GyVd392wMZVeIZk-69">
+          <mxGeometry x="-0.4021" y="-4" relative="1" as="geometry">
+            <mxPoint x="4" y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="La5q6GyVd392wMZVeIZk-47" value="Достаточно топлива для &lt;br&gt;прохождения дистанции?" style="rhombus;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="165" y="220" width="270" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="La5q6GyVd392wMZVeIZk-72" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="La5q6GyVd392wMZVeIZk-48" target="La5q6GyVd392wMZVeIZk-56" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="La5q6GyVd392wMZVeIZk-48" value="Вывод: &quot;Недостаточно топлива для поездки&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="435" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="La5q6GyVd392wMZVeIZk-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="La5q6GyVd392wMZVeIZk-51" target="La5q6GyVd392wMZVeIZk-57" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="La5q6GyVd392wMZVeIZk-51" value="Достаточно топлива для &lt;br&gt;прохождения дистанции?" style="rhombus;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="360" y="490" width="270" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="La5q6GyVd392wMZVeIZk-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="La5q6GyVd392wMZVeIZk-53" target="La5q6GyVd392wMZVeIZk-54" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="La5q6GyVd392wMZVeIZk-53" value="Из текущего топлива вычесть количество необходимого для поездки топлива" style="rounded=1;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="30" y="310" width="185" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="La5q6GyVd392wMZVeIZk-71" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="La5q6GyVd392wMZVeIZk-54" target="La5q6GyVd392wMZVeIZk-55" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="La5q6GyVd392wMZVeIZk-54" value="К пробегу прибавить количество введённых километров" style="rounded=1;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="28.75" y="410" width="187.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="La5q6GyVd392wMZVeIZk-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="La5q6GyVd392wMZVeIZk-55" target="La5q6GyVd392wMZVeIZk-62" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="123" y="895" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="La5q6GyVd392wMZVeIZk-55" value="Вернуть значение true" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="41.25" y="500" width="162.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="La5q6GyVd392wMZVeIZk-73" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="La5q6GyVd392wMZVeIZk-56" target="La5q6GyVd392wMZVeIZk-51" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="La5q6GyVd392wMZVeIZk-56" value="Заправить полный бак" style="rounded=1;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="435" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="La5q6GyVd392wMZVeIZk-76" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="La5q6GyVd392wMZVeIZk-57" target="La5q6GyVd392wMZVeIZk-58" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="La5q6GyVd392wMZVeIZk-57" value="Из текущего топлива вычесть количество необходимого для поездки топлива" style="rounded=1;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="207.5" y="585" width="185" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="La5q6GyVd392wMZVeIZk-78" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="La5q6GyVd392wMZVeIZk-58" target="La5q6GyVd392wMZVeIZk-59" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="La5q6GyVd392wMZVeIZk-58" value="К пробегу прибавить количество введённых километров" style="rounded=1;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="206.25" y="685" width="187.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="La5q6GyVd392wMZVeIZk-79" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="La5q6GyVd392wMZVeIZk-59" target="La5q6GyVd392wMZVeIZk-62" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="La5q6GyVd392wMZVeIZk-59" value="Вернуть значение true" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="218.75" y="775" width="162.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="La5q6GyVd392wMZVeIZk-77" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="La5q6GyVd392wMZVeIZk-60" target="La5q6GyVd392wMZVeIZk-61" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="La5q6GyVd392wMZVeIZk-60" value="Вывод: &quot;Не удалось проехать даже после дозаправки&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="630" y="585" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="La5q6GyVd392wMZVeIZk-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="La5q6GyVd392wMZVeIZk-61" target="La5q6GyVd392wMZVeIZk-62" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="710" y="895" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="La5q6GyVd392wMZVeIZk-61" value="Вернуть значение false" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="628.75" y="685" width="162.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="La5q6GyVd392wMZVeIZk-62" value="Конец" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="260" y="880" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="La5q6GyVd392wMZVeIZk-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.532;entryY=0.041;entryDx=0;entryDy=0;entryPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="La5q6GyVd392wMZVeIZk-51" target="La5q6GyVd392wMZVeIZk-60" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="715" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4djFcbj9iYKiQpnmJofF-1" value="Нет" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="450" y="228" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4djFcbj9iYKiQpnmJofF-2" value="Да" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="300" y="500" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4djFcbj9iYKiQpnmJofF-3" value="Нет" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="660" y="490" width="40" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

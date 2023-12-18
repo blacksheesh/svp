@@ -1,0 +1,7 @@
+﻿<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource>
+        <file>images/1.gif</file>
+        <!-- Другие ресурсы, если есть -->
+    </qresource>
+</RCC>

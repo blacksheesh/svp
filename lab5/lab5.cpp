@@ -177,7 +177,11 @@ int main(int argc, char* argv[]) {
     }
 
     ifstream file(argv[1]);//(argv[1]);
-
+    
+    if (!file.is_open()){
+        cout << "Cannot open file!" << endl;
+        return 1;
+    }
     Route route;
     int x, y;
     string name;
